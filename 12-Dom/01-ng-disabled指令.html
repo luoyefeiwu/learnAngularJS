@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script src="../angular/angular.min.js"></script>
+</head>
+
+<body>
+  <div ng-app="" ng-init="mySwitch=true">
+    <p> <input type="button" value="点我!" ng-disabled="mySwitch"></p>
+    <p><input type="checkbox" ng-model="mySwitch">按钮</p>
+    {{mySwitch}}
+  </div>
+</body>
+
+</html>
