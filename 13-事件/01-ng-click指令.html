@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="../angular/angular.min.js"></script>
+  </head>
+  <body>
+      <div ng-app="myApp" ng-controller="myCtrl">
+        <input type="button" name="" value="点我!" ng-click="count=count+1">
+        <p>{{count}}</p>
+      </div>
+      <script>
+        var app=angular.module("myApp",[]);
+        app.controller("myCtrl",function($scope){
+          $scope.count=0;
+        });
+      </script>
+  </body>
+</html>
